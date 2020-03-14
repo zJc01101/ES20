@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let citys = {pName:'广东',citys:[{cNmae:'广州'},{cNmae:'深圳'},{cNmae:'江门'},{cNmae:'韶关'}]};
+        let { pName,citys:[{cNmae:aa},{cNmae:bb}, ...other] }=citys;
+        console.log(pName,aa,bb,other);
+    </script>
+</body>
+</html>
